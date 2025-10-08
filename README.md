@@ -14,16 +14,15 @@ Users can:
 - View categorized spending insights and trends
 
 ##  Directory Structure
-'''
+```
 Gen-fin-assistant-openai/
 │
 ├── app.py                # Main FastAPI application entrypoint
-├── openai_client.py      # Handles communication with OpenAI/opeai API
+├── openai_client.py      # Handles communication with OpenAI/OpenAI API
 ├── processor.py          # Data processing logic (load, clean, analyze, RAG pipeline)
 ├── prompts.py            # Centralized prompt templates for consistent LLM queries
 ├── requirements.txt      # Project dependencies
 └── README.md             # Project documentation
-'''
 
 ## Script Explanation
 
@@ -66,6 +65,7 @@ Gen-fin-assistant-openai/
 * Connects to the selected LLM
 * Manages API key securely via environment variable
 * Handles rat
+
 
 
 
