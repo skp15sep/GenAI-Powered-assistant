@@ -2,9 +2,9 @@
 GenAI – Powered Financial Insights Assistant – Agile Design &amp; Testing Project
 
 ```markdown
-# 💰 Gen-Fin-Assistant-Gemini
+-  Gen-Fin-Assistant-Gemini
 
-## 📘 Project Overview
+##  Project Overview
 **Gen-Fin-Assistant-Gemini** is a Generative AI–powered financial assistant built using **FastAPI** and **Google Gemini/OpenAI APIs**.  
 It helps users analyze and query their financial transaction data in **natural language**, using **RAG (Retrieval-Augmented Generation)** to generate accurate, data-backed insights.
 
@@ -16,7 +16,7 @@ Users can:
 
 ---
 
-## 🧩 Directory Structure
+##  Directory Structure
 ```
 
 Gen-fin-assistant-gemeni/
@@ -34,7 +34,7 @@ Gen-fin-assistant-gemeni/
 
 ## ⚙️ Script Explanation
 
-### 1️⃣ `app.py` — **Main FastAPI Application**
+### 1️ `app.py` — **Main FastAPI Application**
 - Acts as the backend entrypoint.
 - Exposes the `/query` API endpoint for user questions.
 - Loads `.env` (API key and config).
@@ -55,7 +55,7 @@ Gen-fin-assistant-gemeni/
 
 ---
 
-### 2️⃣ `openai_client.py` — **LLM Communication Layer**
+### 2️ `openai_client.py` — **LLM Communication Layer**
 - Wraps the Gemini or OpenAI API for chat and embeddings.
 - Handles authentication, retries, and error management.
 - Provides clean methods like:
@@ -76,5 +76,6 @@ Gen-fin-assistant-gemeni/
 * Connects to the selected LLM
 * Manages API key securely via environment variable
 * Handles rat
+
 
 
