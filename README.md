@@ -14,7 +14,7 @@ Users can:
 - View categorized spending insights and trends
 
 ##  Directory Structure
----
+'''
 Gen-fin-assistant-openai/
 │
 ├── app.py                # Main FastAPI application entrypoint
@@ -23,7 +23,7 @@ Gen-fin-assistant-openai/
 ├── prompts.py            # Centralized prompt templates for consistent LLM queries
 ├── requirements.txt      # Project dependencies
 └── README.md             # Project documentation
----
+
 ## Script Explanation
 
 
@@ -65,6 +65,7 @@ Gen-fin-assistant-openai/
 * Connects to the selected LLM
 * Manages API key securely via environment variable
 * Handles rat
+
 
 
 
