@@ -65,15 +65,3 @@ Gen-fin-assistant-openai/
 ├── requirements.txt      # Project dependencies
 └── README.md             # Project documentation
 
-
-
-
-
-
-
-
-
-
-
-
-
