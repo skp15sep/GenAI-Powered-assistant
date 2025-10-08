@@ -32,7 +32,7 @@ Gen-fin-assistant-gemeni/
 
 ---
 
-## ⚙️ Script Explanation
+## Script Explanation
 
 ### 1️ `app.py` — **Main FastAPI Application**
 - Acts as the backend entrypoint.
@@ -76,6 +76,7 @@ Gen-fin-assistant-gemeni/
 * Connects to the selected LLM
 * Manages API key securely via environment variable
 * Handles rat
+
 
 
 
