@@ -2,7 +2,7 @@
 GenAI – Powered Financial Insights Assistant – Agile Design &amp; Testing Project
 
 ```markdown
--  Gen-Fin-Assistant-Gemini
+#  Gen-Fin-Assistant-OpenAI
 
 ##  Project Overview
 **Gen-Fin-Assistant-Gemini** is a Generative AI–powered financial assistant built using **FastAPI** and **Google Gemini/OpenAI APIs**.  
@@ -76,6 +76,7 @@ Gen-fin-assistant-gemeni/
 * Connects to the selected LLM
 * Manages API key securely via environment variable
 * Handles rat
+
 
 
 
