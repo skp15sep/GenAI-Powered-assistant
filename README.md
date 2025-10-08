@@ -15,3 +15,65 @@ Users can:
 
 ---
 
+##  Directory Structure
+```
+
+Gen-fin-assistant-gemeni/
+│
+├── app.py                # Main FastAPI application entrypoint
+├── openai_client.py      # Handles communication with OpenAI/opeai API
+├── processor.py          # Data processing logic (load, clean, analyze, RAG pipeline)
+├── prompts.py            # Centralized prompt templates for consistent LLM queries
+├── requirements.txt      # Project dependencies
+└── README.md             # Project documentation
+
+
+---
+
+## Script Explanation
+
+### 1️ `app.py` — **Main FastAPI Application**
+- Acts as the backend entrypoint.
+- Exposes the `/query` API endpoint for user questions.
+- Loads `.env` (API key and config).
+- Uses `processor.py` to load and analyze transaction data.
+- Uses `openai_client.py` (opeai/OpenAI) to get intelligent answers.
+- Includes `/health` endpoint for service monitoring.
+
+**Example logic flow:**
+1. User sends question → `/query`
+2. App loads transaction data → `processor.load_transactions_csv()`
+3. Calls opeai/OpenAI → `openai_client.chat()`
+4. Returns JSON answer to user
+
+**Key Features:**
+- Asynchronous FastAPI API
+- CORS middleware for frontend integration
+- Modular design for easy scaling
+
+---
+
+### 2️ `openai_client.py` — **LLM Communication Layer**
+- Wraps the opeai or OpenAI API for chat and embeddings.
+- Handles authentication, retries, and error management.
+- Provides clean methods like:
+  ```python
+  chat(messages)  # Send multi-turn conversations
+  generate_text(prompt)  # Simple text prompt interface
+  embed(text)  # Get text embeddings for vector search
+````
+
+* Supports model configuration:
+
+  ```python
+  model="gpt-4o-mini"  # or "opeai-1.5-flash"
+  ```
+
+**Responsibilities:**
+
+* Connects to the selected LLM
+* Manages API key securely via environment variable
+* Handles rat
+
+
+
